@@ -5,3 +5,22 @@
 [build.environment]
   HUGO_VERSION = "0.161.1"
   HUGO_EXTENDED = "true"
+
+# Production (stagesscreens.com): only posts with draft: false and a
+# date on or before today. This is the public build.
+[context.production]
+  command = "hugo --gc --minify"
+
+# Any branch other than the production branch gets its own live URL
+# (https://<branch>--<sitename>.netlify.app) and includes drafts and
+# future-dated posts, so a real rendered page can be checked online
+# before it's public. Requires "Branch deploys" turned on in Netlify's
+# site settings (Site configuration -> Build & deploy -> Branches and
+# deploy contexts) -- off by default.
+[context.branch-deploy]
+  command = "hugo --gc --minify --buildDrafts --buildFuture -b $DEPLOY_PRIME_URL"
+
+# Pull requests against the production branch get the same treatment,
+# on their own deploy-preview URL.
+[context.deploy-preview]
+  command = "hugo --gc --minify --buildDrafts --buildFuture -b $DEPLOY_PRIME_URL"
