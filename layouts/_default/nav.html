@@ -1,0 +1,20 @@
+<nav>
+  <div class="nav-scroll-wrap">
+    <button type="button" class="nav-arrow nav-arrow-left" aria-label="Scroll navigation left">&lsaquo;</button>
+    <div class="nav-inner">
+      <a href="{{ "/" | relURL }}"{{ if .IsHome }} class="active"{{ end }}>Essays</a>
+      <a href="{{ "/tags/wilson" | relURL }}">Wilson</a>
+      <a href="{{ "/tags/gladstone" | relURL }}">Gladstone</a>
+      <a href="{{ "/tags/disraeli" | relURL }}">Disraeli</a>
+      <a href="{{ "/about" | relURL }}">About</a>
+      <a href="{{ "/posts" | relURL }}">Archive</a>
+      <a href="https://stagesscreens.com">Stages &amp; Screens ↗</a>
+    </div>
+    <button type="button" class="nav-arrow nav-arrow-right" aria-label="Scroll navigation right">&rsaquo;</button>
+    <button type="button" id="search-toggle" class="nav-arrow nav-search-toggle" aria-label="Search essays">&#128269;</button>
+  </div>
+  <div id="search-panel" class="search-panel" hidden>
+    <input type="text" id="search-input" class="search-input" placeholder="Search essays…" autocomplete="off">
+    <div id="search-results" class="search-results"></div>
+  </div>
+</nav>

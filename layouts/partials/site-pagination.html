@@ -1,0 +1,36 @@
+{{- /* Windowed pager: current ± 2, plus first/last, with ellipses.
+   Used on the Archive page. Expects "." to be the Page that already
+   called .Paginate, so .Paginator is populated. */ -}}
+{{ if gt .Paginator.TotalPages 1 }}
+{{ $cur := .Paginator.PageNumber }}
+{{ $total := .Paginator.TotalPages }}
+{{ $window := 2 }}
+<nav class="site-pager" aria-label="Pagination">
+  {{ if .Paginator.HasPrev }}
+    <a href="{{ .Paginator.Prev.URL }}" class="pager-arrow">← Prev</a>
+  {{ else }}
+    <span class="pager-arrow is-disabled">← Prev</span>
+  {{ end }}
+
+  <div class="pager-nums">
+    {{ range .Paginator.Pagers }}
+      {{ $n := .PageNumber }}
+      {{ if or (eq $n 1) (eq $n $total) (le (math.Abs (sub $n $cur)) $window) }}
+        {{ if eq $n $cur }}
+          <span class="pager-num is-current">{{ $n }}</span>
+        {{ else }}
+          <a href="{{ .URL }}" class="pager-num">{{ $n }}</a>
+        {{ end }}
+      {{ else if or (eq $n (add $cur (add $window 1))) (eq $n (sub $cur (add $window 1))) }}
+        <span class="pager-ellipsis">…</span>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  {{ if .Paginator.HasNext }}
+    <a href="{{ .Paginator.Next.URL }}" class="pager-arrow">Next →</a>
+  {{ else }}
+    <span class="pager-arrow is-disabled">Next →</span>
+  {{ end }}
+</nav>
+{{ end }}

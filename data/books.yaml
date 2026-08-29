@@ -1,0 +1,53 @@
+# Reusable bibliography library. Posts reference these keys from front
+# matter's `sources:` list (see layouts/_default/single.html).
+#
+# Each entry needs either a `citation` (a fully-formatted string, run
+# through markdownify so *italics* work) or the author/title/publisher/
+# year fields for the template's fallback formatting. Example:
+#
+# brantley_the-passion-play:
+#   author: "Brantley, Ben"
+#   title: "The Life and Death of a Passion Play"
+#   citation: "Brantley, Ben. \"The Life and Death of a Passion Play.\" *The New York Times*, 12 Apr. 2019."
+#
+# Left empty for the Stages & Screens launch -- add entries here as
+# posts cite reviews, program notes, biographies, or other sources.
+# Append these entries to the site's existing data/books.yaml.
+# Every entry below is linked or explicitly identified in one of the migrated posts.
+
+waleson_cosi_threepenny_review:
+  author: "Waleson, Heidi"
+  title: "‘Così fan tutte’ and ‘The Threepenny Opera’ Review: Directors Disrupt the Classics"
+  citation: "Waleson, Heidi. ‘Così fan tutte’ and ‘The Threepenny Opera’ Review: Directors Disrupt the Classics. *The Wall Street Journal*, 2025."
+
+mordacq_two_noble_kinsmen:
+  author: "Mordacq, Jessica"
+  title: "Forest Theatre Company Takes On ‘The Two Noble Kinsmen’"
+  citation: "Mordacq, Jessica. ‘Forest Theatre Company Takes On ‘The Two Noble Kinsmen’.’ *Forest Park Review*, 28 July 2025."
+
+senal_hollywood_production:
+  author: "Señal News"
+  title: "Production in Hollywood Plunges to Historic Lows as Nearly Half of U.S. Projects Move Abroad"
+  citation: "Señal News. ‘Production in Hollywood Plunges to Historic Lows as Nearly Half of U.S. Projects Move Abroad.’ *Señal News*."
+
+faughnder_2025_box_office:
+  author: "Faughnder, Ryan"
+  title: "The 2025 Box Office Is Off to a Terrible Start. Is the Problem Supply or Demand?"
+  citation: "Faughnder, Ryan. ‘The 2025 Box Office Is Off to a Terrible Start. Is the Problem Supply or Demand?’ *Los Angeles Times*, 25 Mar. 2025."
+
+tribune_young_classic_movies:
+  title: "You Know Who’s Suddenly Flocking to Old Movies in Chicago? Young Audiences"
+  citation: "‘You Know Who’s Suddenly Flocking to Old Movies in Chicago? Young Audiences.’ *Chicago Tribune*, 13 Feb. 2025."
+
+nyt_oneill_center_finances:
+  title: "Eugene O’Neill Theater Center in Waterford, Connecticut"
+  citation: "‘Eugene O’Neill Theater Center in Waterford, Connecticut.’ *The New York Times*, 14 July 2025."
+
+nyt_kavalier_clay_book_review:
+  title: "A Life-and-Death Story Set in Comic Book Land"
+  citation: "‘A Life-and-Death Story Set in Comic Book Land.’ *The New York Times*, 21 Sept. 2000."
+
+osborne_mets_new_tristan:
+  author: "Osborne, Conrad L."
+  title: "Beyond Opera: The Met’s New Tristan"
+  citation: "Osborne, Conrad L. ‘Beyond Opera: The Met’s New Tristan.’ *Conrad L. Osborne*, 10 Apr. 2026."

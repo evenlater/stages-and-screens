@@ -1,0 +1,16 @@
+{{- $image := "" -}}
+{{- with .Params.image -}}
+  {{- $image = . -}}
+{{- else -}}
+  {{- $base := .File.ContentBaseName -}}
+  {{- $slug := replaceRE `^\d{4}-\d{2}-\d{2}-` "" $base -}}
+  {{- range slice "jpg" "jpeg" "png" "webp" -}}
+    {{- if eq $image "" -}}
+      {{- $candidate := printf "static/img/%s.%s" $slug . -}}
+      {{- if fileExists $candidate -}}
+        {{- $image = printf "/img/%s.%s" $slug . -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $image -}}

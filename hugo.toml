@@ -1,0 +1,24 @@
+baseURL = 'https://stagesscreens.com/'
+title = 'Stages & Screens'
+locale = 'en-us'
+
+[params]
+  description = 'Essays in Theater, Opera, Film & Books'
+  author = 'Darryl Cater'
+  subtitle = 'Theater · Opera · Film · Books'
+  location = 'USA'
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      hardWraps = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+  page = ['HTML']
+  section = ['HTML', 'RSS']

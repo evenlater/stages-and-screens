@@ -1,0 +1,24 @@
+<script>
+(function () {
+  // Devices with a real mouse/trackpad get the CSS :hover effect as-is.
+  // Touch devices have no hover state at all -- tapping a link just
+  // navigates, so the image never has a chance to show. This makes the
+  // first tap on a card reveal the image instead of navigating, and a
+  // second tap (or tapping again) follows the link normally.
+  var supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (supportsHover) return;
+
+  var cards = document.querySelectorAll('.post-card.has-image');
+  cards.forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      if (!card.classList.contains('is-peek')) {
+        e.preventDefault();
+        cards.forEach(function (c) {
+          if (c !== card) c.classList.remove('is-peek');
+        });
+        card.classList.add('is-peek');
+      }
+    });
+  });
+})();
+</script>

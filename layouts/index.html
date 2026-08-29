@@ -1,0 +1,62 @@
+{{ define "main" }}
+<div class="container">
+
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ $posts = $posts.ByDate.Reverse }}
+  {{ $featured := "" }}
+  {{ if $posts }}{{ $featured = index $posts 0 }}{{ end }}
+  {{ $paginator := .Paginate $posts 6 }}
+
+  {{/* ── FEATURED / LATEST ESSAY ── page 1 only. Pagination doesn't
+       split the whole template -- everything outside the paginated
+       loop still renders on every /page/N/ sub-page, so without this
+       check the full hero would repeat identically on pages 2-7. */}}
+  {{ if eq $paginator.PageNumber 1 }}
+  {{ with $featured }}
+  {{ $post := . }}
+  {{ $heroImg := partial "heroimage.html" . }}
+  <article class="hero{{ if $heroImg }} has-image{{ end }}">
+    <p class="hero-flag">Latest Essay</p>
+    <h2 class="hero-title">{{ .Title | markdownify }}</h2>
+    {{ with $heroImg }}
+    <div class="hero-img"><img src="{{ . | relURL }}" alt="" style="object-position: {{ $post.Params.imagePosition | default "center" }};"></div>
+    {{ end }}
+    <div class="hero-rest">
+      {{ with .Params.subtitle }}<p class="hero-sub">{{ . }}</p>{{ end }}
+      <p class="hero-byline">By {{ $.Site.Params.author }} &nbsp;·&nbsp; {{ .Date.Format "January 2, 2006" }}</p>
+      <p class="hero-body">{{ .Summary }}</p>
+      <a href="{{ .Permalink }}" class="hero-cta read-more">Continue Reading</a>
+    </div>
+  </article>
+  {{ end }}
+  {{ end }}
+
+  {{/* ── ESSAY GRID, REAL PAGINATION ──
+       Same source list, same page size (6) as /posts, so page counts
+       always match exactly between home and Archive. The featured
+       post is skipped wherever it lands (always page 1) rather than
+       shown twice. */}}
+  <div class="posts-section">
+    <div class="posts-header"><h3>All Essays</h3></div>
+
+    <div class="post-grid">
+      {{ range $paginator.Pages }}
+        {{ if or (not $featured) (ne .Permalink $featured.Permalink) }}
+          {{ partial "post-card.html" . }}
+        {{ end }}
+      {{ end }}
+    </div>
+
+    {{ if not $posts }}
+    <p class="card-excerpt">No essays yet — check back soon.</p>
+    {{ end }}
+
+    {{ partial "site-pagination.html" . }}
+  </div>
+
+</div>
+
+{{ with .Site.Data.books }}
+{{ end }}
+
+{{ end }}

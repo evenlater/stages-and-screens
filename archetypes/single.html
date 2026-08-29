@@ -1,0 +1,75 @@
+{{ define "main" }}
+{{ $heroImg := partial "heroimage.html" . }}
+<div class="container">
+  <article class="single-post">
+
+    <header class="post-header">
+      <div class="post-header-inner">
+        {{ with .Params.tags }}
+        <p class="post-tag">{{ index . 0 }}</p>
+        {{ end }}
+        <h1>{{ .Title | markdownify }}</h1>
+        {{ with .Params.subtitle }}<p class="post-subtitle">{{ . }}</p>{{ end }}
+        <p class="post-byline">By {{ .Site.Params.author }} &nbsp;·&nbsp; {{ .Date.Format "January 2, 2006" }}</p>
+      </div>
+    </header>
+
+    {{ with $heroImg }}
+    <figure class="post-hero-image">
+      <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="eager">
+    </figure>
+    {{ end }}
+
+    <div class="post-header-inner">
+      {{ with .Params.lede }}
+      <p class="post-lede">{{ . }}</p>
+      {{ end }}
+    </div>
+
+    <div class="post-body">
+      {{ .Content }}
+    </div>
+
+    {{/* ── BIBLIOGRAPHY ── */}}
+    {{ with .Params.sources }}
+    <footer class="post-bibliography">
+      <h3 class="bib-heading">Select Bibliography</h3>
+      <ul class="bib-list">
+        {{ range . }}
+        {{ $bookID := . }}
+        {{ with index hugo.Data.books $bookID }}
+        <li class="bib-item">
+          {{ with .citation }}
+            {{ . | markdownify }}
+          {{ else }}
+            {{ .author }}. <em>{{ .title }}</em>{{ with .edition }}, {{ . }}{{ end }}.{{ with .city }} {{ . }}:{{ end }} {{ .publisher }}, {{ .year }}.
+          {{ end }}
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+    </footer>
+    {{ end }}
+
+    <nav class="post-nav">
+      {{ with .PrevInSection }}
+      <a href="{{ .Permalink }}" class="post-nav-link prev">
+        {{ with partial "heroimage.html" . }}
+        <span class="nav-preview"><img src="{{ . | relURL }}" alt="" loading="lazy"></span>
+        {{ end }}
+        <span class="post-nav-text">← {{ .Title | markdownify }}</span>
+      </a>
+      {{ end }}
+      {{ with .NextInSection }}
+      <a href="{{ .Permalink }}" class="post-nav-link next">
+        {{ with partial "heroimage.html" . }}
+        <span class="nav-preview"><img src="{{ . | relURL }}" alt="" loading="lazy"></span>
+        {{ end }}
+        <span class="post-nav-text">{{ .Title | markdownify }} →</span>
+      </a>
+      {{ end }}
+    </nav>
+
+  </article>
+</div>
+{{ end }}
