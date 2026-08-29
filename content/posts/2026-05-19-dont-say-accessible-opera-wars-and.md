@@ -1,5 +1,6 @@
 ---
-title: "Don't Say *Accessible*: *Opera Wars* and the Fight Over What Opera Can Be"
+title: "Don't Say Accessible: *Opera Wars* and the Fight Over What Opera Can Be"
+subtitle: "A new book by Caitlin Vincent explores opera’s battlegrounds. Does the war for survival hinge on the perception that melody has been missing from new works?"
 date: 2026-05-19
 draft: false
 original_url: "https://stagesandscreens.blogspot.com/2026/05/dont-say-accessible-opera-wars-and.html"
