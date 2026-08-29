@@ -5,7 +5,15 @@
   {{ $posts = $posts.ByDate.Reverse }}
   {{ $featured := "" }}
   {{ if $posts }}{{ $featured = index $posts 0 }}{{ end }}
-  {{ $paginator := .Paginate $posts 6 }}
+  {{/* Paginate everyone EXCEPT the featured post, so each grid page
+       actually holds 6 cards instead of 6-minus-the-one-we-hide. The
+       old approach paginated the full list and then skipped the
+       featured post out of whichever page it landed on (always page 1),
+       leaving that page with only 5 cards against a 6-box grid layout --
+       an empty last box. */}}
+  {{ $gridPosts := $posts }}
+  {{ if $featured }}{{ $gridPosts = after 1 $posts }}{{ end }}
+  {{ $paginator := .Paginate $gridPosts 6 }}
 
   {{/* ── FEATURED / LATEST ESSAY ── page 1 only. Pagination doesn't
        split the whole template -- everything outside the paginated
@@ -32,18 +40,15 @@
   {{ end }}
 
   {{/* ── ESSAY GRID, REAL PAGINATION ──
-       Same source list, same page size (6) as /posts, so page counts
-       always match exactly between home and Archive. The featured
-       post is skipped wherever it lands (always page 1) rather than
-       shown twice. */}}
+       $gridPosts already excludes the featured post, so every page
+       (including page 1) holds a full 6 cards -- no skip-and-leave-a-gap
+       needed, and no risk of it showing up twice. */}}
   <div class="posts-section">
     <div class="posts-header"><h3>All Essays</h3></div>
 
     <div class="post-grid">
       {{ range $paginator.Pages }}
-        {{ if or (not $featured) (ne .Permalink $featured.Permalink) }}
-          {{ partial "post-card.html" . }}
-        {{ end }}
+        {{ partial "post-card.html" . }}
       {{ end }}
     </div>
 
