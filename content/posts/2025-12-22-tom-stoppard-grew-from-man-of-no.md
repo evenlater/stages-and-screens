@@ -4,7 +4,7 @@ date: 2025-12-22
 draft: false
 tags:
   - Theater
-subtitle: When the greatest living playwright ceased to be last month, he left behind a towering monument of "reformed man" lit. He also reformed me.
+subtitle: When the greatest living playwright ceased to be last month, he left behind a towering monument of "reformed man" literature. He also reformed me.
 lede: ''
 image: ''
 sources: []
