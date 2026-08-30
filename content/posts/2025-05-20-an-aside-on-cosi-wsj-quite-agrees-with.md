@@ -1,6 +1,6 @@
 ---
 title: "An Aside on *Cosi*: The WSJ Quite Agrees With Me"
-date: 2025-05-19
+date: 2025-05-20
 draft: false
 original_url: "https://stagesandscreens.blogspot.com/2025/05/an-aside-on-cosi-wsj-quite-agrees-with.html"
 tags:

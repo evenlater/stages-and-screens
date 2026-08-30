@@ -1,6 +1,6 @@
 ---
 title: "Stages & Screens: An Introduction"
-date: 2025-05-19
+date: 2025-05-18
 draft: false
 original_url: "https://stagesandscreens.blogspot.com/2025/05/stages-screens-introduction.html"
 tags:
