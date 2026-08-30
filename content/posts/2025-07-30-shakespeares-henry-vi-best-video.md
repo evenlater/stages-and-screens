@@ -4,7 +4,7 @@ date: 2025-07-30
 draft: false
 tags:
   - Theater
-subtitle: One of the holy grails of Shakespeare fandom is this trilogy of plays. If you can't find it live, here are your options on video.
+subtitle: One of the holy grails of Shakespeare fandom is this trilogy of plays. If you can't find it live, here is a review of the filmed options.
 lede: ''
 image: ''
 sources: []
