@@ -4,7 +4,7 @@ date: 2026-02-26
 draft: false
 tags:
   - Opera
-subtitle: The best productions of this classic opera feature Kaufmann, Corelli, Del Monaco and Tebaldi. The worst might surprise you.
+subtitle: The best filmed productions of this classic opera feature Kaufmann, Corelli, Del Monaco and Tebaldi. The worst might surprise you.
 lede: ''
 image: ''
 sources: []
