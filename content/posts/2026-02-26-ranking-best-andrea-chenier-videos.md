@@ -6,7 +6,7 @@ tags:
   - Opera
 subtitle: Judging the films of Giordano's French Revolution opera epic by production and not just voice. Kaufmann, Corelli, Del Monaco and Tebaldi vie for the top spot.
 lede: ''
-image: ''
+image: /img/IMG_3309.jpeg
 sources: []
 original_url: https://stagesandscreens.blogspot.com/2026/02/ranking-best-andrea-chenier-videos.html
 ---
