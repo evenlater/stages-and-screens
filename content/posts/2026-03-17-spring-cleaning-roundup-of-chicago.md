@@ -6,7 +6,7 @@ tags:
   - Theater
 subtitle: Reviews of "Dance of Death," "The Gondoliers," "Die Silbersee," "Holiday," "Eureka Day," "The Outsiders," "Salome," "Cosi Fan Tutte" and "Sterephonic"
 lede: ''
-image: ''
+image: /img/IMG_3311.jpeg
 sources: []
 original_url: https://stagesandscreens.blogspot.com/2026/03/spring-cleaning-roundup-of-chicago.html
 ---
