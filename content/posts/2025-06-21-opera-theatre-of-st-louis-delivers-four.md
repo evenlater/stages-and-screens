@@ -4,7 +4,7 @@ date: 2025-06-21
 draft: false
 tags:
   - Opera
-subtitle: Reviewing a new work by a Pulitzer-winner, a 1950s "Die Fledermaus" in comic book color, a "MIdsummer Night" to remember, and a "Don Pasquale" that takes on ageism.
+subtitle: Reviewing a new work by a Pulitzer-winner, a 1950s "Die Fledermaus" in comic book color, a "Midsummer Night" to remember, and a "Don Pasquale" that takes on ageism.
 lede: ''
 image: ''
 sources: []
