@@ -4,7 +4,7 @@ date: 2025-06-23
 draft: false
 tags:
   - Theater
-subtitle: Observing an overdue honor for a unique spot in the regional theater landscape.
+subtitle: Observing an overdue honor, as the Regional Tony Award goes to a unique spot in the nation's theater landscape.
 lede: ''
 image: ''
 sources: []
