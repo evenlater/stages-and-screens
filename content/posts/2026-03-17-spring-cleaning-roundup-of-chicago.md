@@ -4,7 +4,7 @@ date: 2026-03-17
 draft: false
 tags:
   - Theater
-subtitle: Reviews of *Dance of Death*, *The Gondoliers*, *Die Silbersee*, *Holiday*, *Eureka Day*, *The Outsiders*, *Salome*, *Cosi Fan Tutte* and *Sterephonic*
+subtitle: Reviews of "Dance of Death," "The Gondoliers," "Die Silbersee," "Holiday," "Eureka Day," "The Outsiders," "Salome," "Cosi Fan Tutte" and "Sterephonic"
 lede: ''
 image: ''
 sources: []
