@@ -4,7 +4,7 @@ date: 2025-07-09
 draft: false
 tags:
   - Film
-subtitle: Two films by this master director dropped almost 30 slots on a key industry index of the best films. But he isn't dead yet.
+subtitle: "After #MeToo, two films by this master director dropped almost 30 slots on a key industry index of the best films. But now he's back in theaters."
 lede: ''
 image: ''
 sources: []
