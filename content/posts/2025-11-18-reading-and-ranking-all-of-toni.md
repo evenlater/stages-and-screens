@@ -4,7 +4,7 @@ date: 2025-11-18
 draft: false
 tags:
   - Books
-subtitle: ''
+subtitle: Rankings of Toni Morrison novels are hard to find online. So I read all of her books in a month and ranked them myself.
 lede: ''
 image: ''
 sources: []
