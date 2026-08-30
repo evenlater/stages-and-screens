@@ -4,6 +4,8 @@ date: 2026-05-19
 draft: false
 tags:
   - Opera
+imageFit: "contain"
+imagePosition: "Top"
 subtitle: A new book by Caitlin Vincent explores opera’s battlegrounds. Does the war for survival hinge on the perception that melody has been missing from new works?
 lede: ''
 image: /img/IMG_3305.jpeg
