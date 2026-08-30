@@ -4,7 +4,7 @@ date: 2025-10-20
 draft: false
 tags:
   - Theater
-subtitle: Broadway is in its longest Eugene O'Neill drought since the playwright was alive, and a recent film portrays him as a racist jerk. Is his literary standing softening--again?
+subtitle: Broadway is in its longest Eugene O'Neill drought since the playwright was alive, and a recent film portrays him as a racist jerk. Is his literary standing softening—again?
 lede: ''
 image: ''
 sources:
