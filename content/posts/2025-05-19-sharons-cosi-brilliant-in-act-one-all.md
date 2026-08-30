@@ -1,13 +1,17 @@
 ---
-title: "Sharon’s Concept *Cosi* Brilliant and Then Disastrous"
+title: Sharon’s Concept *Cosi* Brilliant and Then Disastrous
 date: 2025-05-19
 draft: false
-original_url: "https://stagesandscreens.blogspot.com/2025/05/sharons-cosi-brilliant-in-act-one-all.html"
 tags:
   - Opera
-sources:
+subtitle: The first half of this uniquely audacious concept "Cosi" is intriguingly provocative and textually based. Too bad the second half falls apart.
+lede: ''
+image: ''
+sources: []
+original_url: https://stagesandscreens.blogspot.com/2025/05/sharons-cosi-brilliant-in-act-one-all.html
 ---
-When the *Detroit Free Press* excoriated Yuval Sharon’s new AI-themed *Cosi Fan Tutte* at Detroit Opera, in which the women are robots designed by the men, it had it half-right. I was sold on the audacious concept in the first act, but the show went both south and overboard in the second.
+
+When the _Detroit Free Press_ excoriated Yuval Sharon’s new AI-themed _Cosi Fan Tutte_ at Detroit Opera, in which the women are robots designed by the men, it had it half-right. I was sold on the audacious concept in the first act, but the show went both south and overboard in the second.
 
 What sold me on it were these lines in the opening scene of Lorenzo Da Ponte's original libretto, which melded so well with the girls-are-robots concept that I forgave it all its excesses until midway into the second act:
 
