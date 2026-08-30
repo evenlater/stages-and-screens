@@ -4,7 +4,7 @@ date: 2026-02-26
 draft: false
 tags:
   - Opera
-subtitle: The best filmed productions of this classic opera feature Kaufmann, Corelli, Del Monaco and Tebaldi. The worst might surprise you.
+subtitle: Judging the films of Giordano's French Revolution opera epic by production and not just voice. Kaufmann, Corelli, Del Monaco and Tebaldi vie for the top spot.
 lede: ''
 image: ''
 sources: []
