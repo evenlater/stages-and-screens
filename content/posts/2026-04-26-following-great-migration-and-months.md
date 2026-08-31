@@ -6,7 +6,7 @@ tags:
   - Theater
 subtitle: Two shows about the migration of African Americans to the North in the 20th Century, and reviews of "Madama Butterfly," "Oscar Wao," "Two Sisters and a Piano," "Tristan and Isolde," and Italian opera at the CSO
 lede: ''
-image: ''
+image: /img/IMG_3310.jpeg
 sources:
   - osborne_mets_new_tristan
 original_url: https://stagesandscreens.blogspot.com/2026/04/following-great-migration-and-months.html
