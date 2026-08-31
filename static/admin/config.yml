@@ -74,6 +74,13 @@ collections:
 
       - { label: Cover Image, name: image, widget: image, required: false }
 
+      - label: Image Fit
+        name: imageFit
+        widget: select
+        options: ["cover", "contain"]
+        required: false
+        hint: "Leave blank for the normal cropped look. Use contain for images that should not be cropped."
+
       - label: Bibliography Sources
         name: sources
         widget: list
