@@ -6,7 +6,8 @@ tags:
   - Film
 subtitle: A gap in our cinematic education revealed.
 lede: ''
-image: ''
+image: /img/IMG_3341.jpeg
+imageFit: ''
 sources: []
 original_url: https://stagesandscreens.blogspot.com/2025/07/why-arent-there-any-movies-starring.html
 ---
