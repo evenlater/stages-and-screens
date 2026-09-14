@@ -4,12 +4,13 @@ date: 2026-05-19
 draft: false
 tags:
   - Opera
-imageFit: "contain"
-imagePosition: "Top"
+  - Books
 subtitle: A new book by Caitlin Vincent explores opera’s battlegrounds. Does the war for survival hinge on the perception that melody has been missing from new works?
 lede: ''
 image: /img/IMG_3305.jpeg
+imageFit: contain
 sources: []
+imagePosition: Top
 original_url: https://stagesandscreens.blogspot.com/2026/05/dont-say-accessible-opera-wars-and.html
 ---
 
