@@ -1,5 +1,5 @@
 ---
-title: Fear and Self-Loathing in Proust and the gay canon
+title: Fear and Self-Loathing in Proust and the Gay Canon
 date: 2026-09-14
 draft: true
 tags:
