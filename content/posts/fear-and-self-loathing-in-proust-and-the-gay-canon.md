@@ -1,7 +1,7 @@
 ---
 title: Fear and Self-Loathing in Proust and the Gay Canon
 date: 2026-09-14
-draft: true
+draft: false
 tags:
   - Books
 subtitle: The Proust cycle, and four other gay novels I read this year, all show the impact of shame on gay lit before Stonewall, affirming a scholar's supposition that the foundational gay canon doubles as a canon of "homophobic mastery."
