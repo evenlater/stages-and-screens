@@ -4,11 +4,28 @@ date: 2026-09-14
 draft: false
 tags:
   - Books
-subtitle: The Proust cycle, and four other gay novels I read this year, all show the impact of shame on gay lit before Stonewall, affirming a scholar's supposition that the foundational gay canon doubles as a canon of "homophobic mastery."
+subtitle: The Proust cycle, and four other gay novels I also read this year, all show the impact of shame on gay lit before Stonewall, affirming a scholar's supposition that the foundational gay canon doubles as a canon of "homophobic mastery."
 lede: ''
 image: /img/pasted-image-1789346962935.png
 imageFit: contain
-sources: []
+sources:
+  - baldwin_giovanni_room
+  - bloom_western_canon
+  - carter_proust_in_love
+  - friedlander_proustian
+  - prousts_lesbianism
+  - death_in_venice
+  - proust_swann_way
+  - proust_shadow
+  - proust_guermantes
+  - proust_sodom
+  - proust_prisoner
+  - proust_fugitive
+  - proust_time
+  - sedgwick_between
+  - sedgwick_closet
+  - vidal_pillar
+  - wilde_picture
 ---
 
 Marcel Proust’s iconic character the Baron de Charlus, his narrator tells us, is fooling himself that no one knows he’s gay. Charlus throws verbal daggers at other men he suspects to be gay, effusively praises Balzac for writing about gay people, and carelessly remarks about the good looks of the man everyone knows him (but no one admits they know him) to be sleeping with. “When Monsieur de Charlus was not talking about his admiration for Morel’s good looks,” Proust’s narrator says, “as if they were nothing to do with a proclivity—known as vice—he held forth about this vice, but as though it had absolutely nothing to do with him. Occasionally he didn’t even hesitate to call it by its name.” This passage, from the new Oxford World Classics translation of _Sodom and Gomorrah_, which came out last week, is perhaps a case of the floral-patterned ceramic teacup calling the floral-patterned ceramic tea pot floral-patterned. Proust lived a remarkably “out” life as a homosexual for his time, from his school days on, and was wonderfully verbose about gay matters in his writings. However, he was not above writing a friend to ask them not to discuss his orientation, or adding to the same letter a sudden unusual, and rather transparent, postscript about having just spotted a ravishing blonde woman in a cafe. When the writer Andre Gide, the most prominent French advocate for homosexuality of their time, made a remark about Proust’s sexuality, Marcel tossed off a livid letter suggesting damning remarks could be made about Gide too if he could not hold his tongue. (Carter 117.) Proust is fooling no one about his now-famous orientation, and we love him for it. So why doesn’t he seem to love the Baron for it? Why, as has often been asked, did so brave a homosexual in writing about homosexuality go so far out of his way to make his otherwise very autobiographical narrator heterosexual? The same question is asked about his Judaism, as he was part-Jewish but made the hero of his novel Christian.
