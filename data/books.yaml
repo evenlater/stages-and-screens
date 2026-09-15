@@ -1,9 +1,9 @@
 # Reusable bibliography library. Posts reference these keys from front
-# matter's `sources:` list (see layouts/_default/single.html).
+# matter’s `sources:` list (see layouts/_default/single.html).
 #
 # Each entry needs either a `citation` (a fully-formatted string, run
 # through markdownify so *italics* work) or the author/title/publisher/
-# year fields for the template's fallback formatting. Example:
+# year fields for the template’s fallback formatting. Example:
 #
 # brantley_the-passion-play:
 #   author: "Brantley, Ben"
@@ -12,7 +12,7 @@
 #
 # Left empty for the Stages & Screens launch -- add entries here as
 # posts cite reviews, program notes, biographies, or other sources.
-# Append these entries to the site's existing data/books.yaml.
+# Append these entries to the site’s existing data/books.yaml.
 # Every entry below is linked or explicitly identified in one of the migrated posts.
 
 waleson_cosi_threepenny_review:
@@ -55,7 +55,7 @@ osborne_mets_new_tristan:
 baldwin_giovanni_room:
   author: "Baldwin, James"
   title: "Giovanni‘s Room"
-  citation: 'Baldwin, James. *Giovanni's Room.* New York: Alfred A. Knopf, 2016.'  
+  citation: 'Baldwin, James. *Giovanni’s Room.* New York: Alfred A. Knopf, 2016.'  
 
 bloom_western_canon:
   author: "Bloom, Harold"
@@ -74,7 +74,7 @@ friedlander_proustian:
 
 prousts_lesbianism:
   author: "Ladenson, Elisabeth"
-  title: "Proust's Lesbianism"
+  title: "Proust’s Lesbianism"
   citation: "Ladenson, Elisabeth. *Proust’s Lesbianism.* Cornell University Press, 1999."
 
 death_in_venice:
