@@ -51,3 +51,88 @@ osborne_mets_new_tristan:
   author: "Osborne, Conrad L."
   title: "Beyond Opera: The Met’s New Tristan"
   citation: "Osborne, Conrad L. ‘Beyond Opera: The Met’s New Tristan.’ *Conrad L. Osborne*, 10 Apr. 2026."
+
+baldwin_giovanni_room:
+  author: "Baldwin, James"
+  title: "Giovanni‘s Room"
+  citation: 'Baldwin, James. *Giovanni's Room.* New York: Alfred A. Knopf, 2016.'  
+
+bloom_western_canon:
+  author: "Bloom, Harold"
+  title: "The Western Canon"
+  citation: "Bloom, Harold. *The Western Canon.* New York: Houghton and Mifflin Publishing. 1994."
+
+carter_proust_in_love:
+  author: "Carter, William" 
+  title: "Proust in Love" 
+  citation: "Carter, William. *Proust in Love.* Yale University Press, 2006.
+
+friedlander_proustian:
+  author: "Friedländer, Saul" 
+  title: "Proustian Uncertainties: On Reading and Rereading In Search of Lost Time." 
+  citation: "Friedländer, Saul. *Proustian Uncertainties: On Reading and Rereading In Search of Lost Time.* New York: Other Press, 2020.'
+
+prousts_lesbianism:
+  author: "Ladenson, Elisabeth"
+  title: "Proust's Lesbianism"
+  citation: "Ladenson, Elisabeth. *Proust’s Lesbianism.* Cornell University Press, 1999."
+
+death_in_venice:
+  author: "Mann, Thomas"
+  title: "Death in Venice"
+  citation: "Mann, Thomas. Heim, Michael Henry, translator. *Death in Venice.* New York: HarperCollins, 2004."
+
+proust_swann_way:
+  author: "Proust, Marcel"
+  title: "The Swann Way." 
+  citation: "Proust, Marcel. The Swann Way. Oxford University Press, 2023."
+
+proust_shadow: 
+  author: "Proust, Marcel"
+  title: "In the Shadow of Girls in Blossom."
+  citation: "Proust, Marcel. *In the Shadow of Girls in Blossom.* Oxford University Press, 2025."
+
+proust_guermantes:
+  author: "Proust, Marcel"
+  title: "The Guermantes Way."
+  citation: "Proust, Marcel. *The Guermantes Way.* Oxford University Press, 2026."
+
+proust_sodom:
+  author: "Proust, Marcel"
+  title: "Sodom and Gomorrah"
+  citation: "Proust, Marcel. *Sodom and Gomorrah.* Oxford University Press, 2026."
+
+proust_prisoner:
+  author: "Proust, Marcel" 
+  title: "The Prisoner"
+  citation: "Proust, Marcel. *The Prisoner.* New York: Penguin Classics, 2019."
+
+proust_fugitive:
+  author: "Proust, Marcel"
+  title: "The Fugitive"
+  citation: "Proust, Marcel. *The Fugitive.* New York: Penguin Classics, 2021."
+
+proust_time:
+  author: "Proust, Marcel"
+  title: "Finding Time Again"
+  citation: "Proust, Marcel. *Finding Time Again.* New York: Penguin Classics, 2023."
+
+sedgwick_between:
+  author: "Sedgwick, Eve Kosofsky"
+  title: "Between Men"
+  citation: "Sedgwick, Eve Kosofsky. *Between Men.* New York: Columbia University, 2015."
+
+sedgwick_closet:
+  author: "Sedgwick, Eve Kosofsky"
+  title: "Epistemology of the Closet"
+  citation: "Sedgwick, Eve Kosofsky. *Epistemology of the Closet.* University of California Press, 1990."
+
+vidal_pillar:
+  author: "Vidal, Gore"
+  title: "The City and the Pillar"
+  citation: "Vidal, Gore. *The City and the Pillar.* New York: Random House, 1995."
+
+wilde_picture:
+  author: "Wilde, Oscar"
+  title: "The Picture of Dorian Gray"
+  citation: "Wilde, Oscar. *The Picture of Dorian Gray.* London: JamboInk, 2023."
