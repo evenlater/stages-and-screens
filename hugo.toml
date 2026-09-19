@@ -4,7 +4,7 @@ locale = 'en-us'
 
 [params]
   description = 'Essays in Theater, Opera, Film & Books'
-  author = 'Cedric'
+  author = 'Cedric Stimpson'
   subtitle = 'Theater · Opera · Film · Books'
   location = 'USA'
 
