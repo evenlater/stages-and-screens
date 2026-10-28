@@ -552,10 +552,32 @@ nav a.active { color: var(--paper); }
 /* Standard 1200×630 banner, sized to the article column rather than
    full-bleed, sitting above the lede. object-fit: cover fills the
    frame cleanly at this fixed shape. */
-.post-hero-image {
+.post-hero {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto 2rem;
+}
+
+/* Optional photo credit, set via the "Image Credit" field. Sits just
+   below the image, right-aligned, quiet. */
+.post-hero-credit {
+  margin: 0.5rem 0 0;
+  text-align: right;
+  font-family: var(--condensed);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.post-hero-credit a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.post-hero-credit a:hover { color: var(--paper-mid); }
+
+.post-hero-image {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   aspect-ratio: 1200 / 630;
   background: var(--bg);
   border: 1px solid var(--rule);

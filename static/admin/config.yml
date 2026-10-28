@@ -81,6 +81,12 @@ collections:
         required: false
         hint: "Leave blank for the normal cropped look. Use contain for images that should not be cropped."
 
+      - label: Image Credit
+        name: imageCredit
+        widget: string
+        required: false
+        hint: 'Optional photo credit shown under the cover image, e.g. "Photo: Cory Weaver / Metropolitan Opera". Links are allowed: [Photo: Name](https://...)'
+
       - label: Bibliography Sources
         name: sources
         widget: list

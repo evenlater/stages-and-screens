@@ -15,9 +15,12 @@
     </header>
 
     {{ with $heroImg }}
-    <figure class="post-hero-image{{ if eq $.Params.imageFit "contain" }} contain{{ end }}">
-      <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="eager" style="object-position: {{ $.Params.imagePosition | default "center" }};">
-    </figure>
+    <div class="post-hero">
+      <figure class="post-hero-image{{ if eq $.Params.imageFit "contain" }} contain{{ end }}">
+        <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="eager" style="object-position: {{ $.Params.imagePosition | default "center" }};">
+      </figure>
+      {{ with $.Params.imageCredit }}<p class="post-hero-credit">{{ . | markdownify }}</p>{{ end }}
+    </div>
     {{ end }}
 
     <div class="post-header-inner">
