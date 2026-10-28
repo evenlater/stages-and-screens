@@ -8,7 +8,7 @@ subtitle: For almost 240 years we've debated whether Mozart's libertine adventur
 lede: ''
 image: /img/IMG_4060.PNG
 imageFit: contain
-imageCredit: 'Photos: Kyle Flubacker, Andrew Cioffi/Lyric Opera of Chicago'
+imageCredit: 'Photo: Kyle Flubacker, Andrew Cioffi/Lyric Opera of Chicago'
 sources: []
 photocredit: 'Photos: Kyle Flubacker, Andrew Cioffi/Lyric Opera of Chicago'
 ---
