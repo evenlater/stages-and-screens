@@ -1,7 +1,7 @@
 ---
 title: 'Who is Don Giovanni, almost a decade into the #MeToo era?'
 date: 2026-10-28
-draft: true
+draft: false
 tags:
   - Opera
 subtitle: For almost 240 years we've debated whether Mozart's libertine adventurer is a hero, an anti-hero, or a villain. Where has the debate moved in this era, and what does it say about its oft-ignored co-author, Lorenzo Da Ponte?
