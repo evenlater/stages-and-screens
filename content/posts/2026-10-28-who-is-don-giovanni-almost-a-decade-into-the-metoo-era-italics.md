@@ -8,6 +8,7 @@ subtitle: For almost 240 years we've debated whether Mozart's libertine adventur
 lede: ''
 image: /img/IMG_4060.PNG
 imageFit: contain
+imageCredit: ''
 sources: []
 ---
 
@@ -46,7 +47,7 @@ On guard then! Your death is near.
 
 The stage directions tell us very little about what happens next. They say only: “Si battono;” “They fight.” And then: “Il Commendatore è ferito.” “The Commendatore is wounded.” 
 
-In most productions of the opera, this scuffle takes place with swords. That necessarily humanizes Don Giovanni, because when one is forced into a sword fight, one must fight back or die. The mortal wounding of the Commendatore in such a production is much more likely to read as self-defense, and therefore when he dies of the wound it is often not technically murder. But in two productions that ran after the advent of the #MeToo movement, Don Giovanni does not get drawn into a sword fight. He shoots the Commendatore in cold blood. In the Falls production, when her father appears to rescue her and defend her honor, Giovanni wrests a gun from his hands and (though the Commendatore is left defenseless) shoots him in cold blood. Meanwhile, in 2023 the Metropolitan Opera introduced a production in which the father threatens the Don only with fisticuffs. (The production ran first in Paris in 2019.) Giovanni nonetheless answers his assailant by pulling out his own gun and firing at point blank. In the Royal Opera production, the combatants are still using swords, which by comparison seems quaintly pre-#MeToo. But it’s clear the London production does not see Giovanni as a hero. 
+In most productions of the opera, this scuffle takes place with swords. That necessarily humanizes Don Giovanni, because when one is forced into a sword fight, one must fight back or die. The mortal wounding of the Commendatore in such a production is much more likely to read as self-defense, and therefore when he dies of the wound it is often not technically murder. But in two productions that ran after the advent of the #MeToo movement, Don Giovanni does not get drawn into a sword fight. He shoots the Commendatore in cold blood. In the Falls production, when her father appears to rescue her and defend her honor, Giovanni wrests a gun from his hands and (though the Commendatore is left defenseless) shoots him. Meanwhile, in 2023 the Metropolitan Opera introduced a production in which the father threatens the Don only with fisticuffs. (The production ran first in Paris in 2019.) Giovanni nonetheless answers his assailant by pulling out his own gun and firing at point blank. In the Royal Opera production, the combatants are still using swords, which by comparison seems quaintly pre-#MeToo. But it’s clear the London production does not see Giovanni as a hero. 
 
 ## The debate rages in critical literature
 
