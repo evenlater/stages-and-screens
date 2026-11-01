@@ -25,9 +25,11 @@
   {{ $heroImg := partial "heroimage.html" . }}
   <article class="hero{{ if $heroImg }} has-image{{ end }}">
     <p class="hero-flag">Latest Essay</p>
-    <h2 class="hero-title">{{ .Title | markdownify }}</h2>
+    <h2 class="hero-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
     {{ with $heroImg }}
-    <div class="hero-img"><img src="{{ . | relURL }}" alt="" style="object-position: {{ $post.Params.imagePosition | default "center" }};"></div>
+    {{/* The title link and "Continue Reading" already give keyboard and
+         screen-reader users a way in, so the image link is click-only. */}}
+    <div class="hero-img"><a href="{{ $post.Permalink }}" tabindex="-1" aria-hidden="true"><img src="{{ . | relURL }}" alt="" style="object-position: {{ $post.Params.imagePosition | default "center" }};"></a></div>
     {{ end }}
     <div class="hero-rest">
       {{ with .Params.subtitle }}<p class="hero-sub">{{ . }}</p>{{ end }}
