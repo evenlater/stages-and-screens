@@ -6,9 +6,9 @@ tags:
   - Theater
 subtitle: Current productions of "Seven Guitars" and "King Hedley II" spark an interpretation of the whole Wilson series.
 lede: ''
-image: /img/IMG_4294.jpeg
+image: /img/IMG_4295.png
 imageFit: contain
-imageCredit: James Lewis as King Hedley II in City Lit's production. Photo by Steven Townshend/Distant Era
+imageCredit: Composite by Septimus Carr. Joshua Boone in Joe Turner’s Come and Gone, NewYorkTheatre.me; Phylicia Rashad as Aunt Ester in Gem of the Ocean, SoulOfTheAmericanThetare.org; James Lewis as King Headley II, photo by Steven Townshend/Distant Era; August Wilson in 1985, AP photo.
 sources: []
 ---
 
