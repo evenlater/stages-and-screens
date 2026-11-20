@@ -98,4 +98,6 @@ Wilson depicts Loomis’ beautiful vision of bones without much ambiguity as to 
 
 At the beginning of this essay, I posited that the plays spell out a kind of thesis on religion and spirituality: Redemption is to be found in reconnecting with African heritage, and there are more things in heaven and earth than are dreamt of in the philosophy of an ever-resilient Black church, but in the end every individual must find his own salvation. Those points are all conveyed by Wilson in my favorite of his plays, _Joe Turner_, as though he didn’t need a full career to birth so rich and robust a depiction of the spiritual over a century. The experience of the African Juba unearths a redemptive experience for Loomis that is effectuated by a reconnection to spiritual heritage. The bony vision he experiences comes distinctly from the imagery of the Christian church, which remains a powerful rock to a community in peril—but Wilson uses those images to rebut Christian theology. Ghosts may be real, and the expungement of them healing as in _The Piano Lesson_. But in the end salvation lies not in magic or superstition but in the individual him or herself. 
 
-Still, as Wilson told Lahr, the individual good is always subverted to the good of the community. Because when it comes down to it, we’re all brilliant.
+Still, as Wilson told Lahr, the individual good is always subverted to the good of the community. 
+
+Because when it comes down to it, we’re all brilliant.
