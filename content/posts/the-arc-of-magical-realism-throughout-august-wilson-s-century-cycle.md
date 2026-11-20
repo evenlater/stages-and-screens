@@ -1,5 +1,5 @@
 ---
-title: The arc of magical realism throughout August Wilson's Century Cycle
+title: The arc of magic and realism throughout August Wilson's Century Cycle
 date: 2026-11-20
 draft: false
 tags:
