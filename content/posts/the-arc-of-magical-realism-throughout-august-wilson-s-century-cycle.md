@@ -1,7 +1,7 @@
 ---
 title: The arc of magical realism throughout August Wilson's Century Cycle
 date: 2026-11-20
-draft: true
+draft: false
 tags:
   - Theater
 subtitle: Current productions of "Seven Guitars" and "King Hedley II" spark an interpretation of the whole Wilson series.
