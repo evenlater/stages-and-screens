@@ -6,8 +6,8 @@ tags:
   - Theater
 subtitle: Current productions of "Seven Guitars" and "King Hedley II" spark an interpretation of the whole Wilson series.
 lede: ''
-image: /img/89805226-DAE8-419F-BF34-7D47019AB8AC.png
-imageFit: ''
+image: /img/IMG_4294.jpeg
+imageFit: contain
 imageCredit: James Lewis as King Hedley II in City Lit's production. Photo by Steven Townshend/Distant Era
 sources: []
 ---
