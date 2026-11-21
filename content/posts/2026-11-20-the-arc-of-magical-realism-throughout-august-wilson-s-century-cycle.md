@@ -10,7 +10,24 @@ image: /img/august-wilson.png
 imageFit: ''
 imageCredit: August Wilson, ZUMA Press, Inc
 sources:
+  - bryer_conversations_wilson
   - elam_past
+  - hartigan_wilson_life
+  - nadel_completing_century
+  - oyelaran_gem_diaspora
+  - shannon_dramatic_vision
+  - shumway_narrative_realism
+  - wilson_fences
+  - wilson_gem
+  - wilson_how_i_learned
+  - wilson_jitney
+  - wilson_joe_turner
+  - wilson_king_hedley
+  - wilson_ma_rainey
+  - wilson_piano_lesson
+  - wilson_radio_golf
+  - wilson_seven_guitars
+  - wilson_two_trains
 ---
 
 I discovered playwright August Wilson, as many must, on a freshman-year college syllabus. My Introduction to Theater class had been assigned Wilson’s masterpiece _Joe Turner’s Come and Gone_, and upon reading it I was blown away by the ostensible magical realism in Wilson’s depiction of the power of both Christian myth and African spirituality in the lives of the African American denizens of a Pittsburgh boarding house in 1911. At last, the day came to discuss the play, and we were asked to move our chairs into a circle so that we could dissect the script in the spirit of orbicular community. When my professor brought up the scene where Herald Loomis flips out in the middle of an African call-and-response dance ritual called the Juba, I was ready. I had been studying Walter Brueggemann’s commentaries on Ezekiel 37 and the Hebrew captivity in Babylon in a concurrent religion class and felt particularly qualified to natter on about Herald Loomis’ vision. We read from the play:
