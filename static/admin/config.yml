@@ -3,25 +3,12 @@
 # Sveltia CMS config for ideationalevolution.com
 #
 # NOT covered by this config (left as a manual step / open question):
-#   - `sources:` is a list of bibliography keys (e.g.
-#     "blake_disraeli") that must match an entry in data/books.yaml
-#     exactly. Below it's just a plain list of text fields — Darryl
-#     would need to know/copy the right key, same as today, just now
-#     from inside the CMS rather than editing the file directly.
-#
-#     A nicer "pick the citation by title" dropdown IS possible with
-#     Sveltia's relation widget, but only if data/books.yaml changes
-#     shape first: right now it's a dictionary keyed by citation slug
-#     (`blake_disraeli: {author: ..., title: ...}`), and the relation
-#     widget wants a LIST of entries instead (`- key: blake_disraeli
-#     \n  author: ... \n  title: ...`). That's a real migration of the
-#     shared bibliography file plus the Hugo template that looks
-#     citations up by key (layouts/_default/single.html) — worth doing
-#     if Darryl finds typing/copying keys error-prone, but it's more
-#     than a CMS config change, so I left it out of this pass. Happy to
-#     build it if you want the picker badly enough to justify the
-#     migration (shared with septimus-carr and stages-and-screens too,
-#     since all three use the same data/books.yaml pattern).
+#   - Bibliography: each book is its own file in data/books/<key>.yaml
+#     (Hugo reads the folder as .Data.books, keyed by file name). The
+#     "Bibliography" collection below edits those files, and a post's
+#     Sources field is a search-and-pick list of them, with an Add
+#     button for new books. A GitHub Action (.github/workflows/
+#     sync-books.yml) copies new/changed book files to the other sites.
 #
 #   - `tags:` below is a fixed 3-option list (Disraeli, Gladstone,
 #     Wilson) matching what's actually used across all 38 posts today.
@@ -89,15 +76,69 @@ collections:
 
       - label: Bibliography Sources
         name: sources
-        widget: list
+        widget: relation
+        collection: books
+        value_field: '{{slug}}'
+        search_fields: [author, title]
+        display_fields: ['{{author}} — {{title}}']
+        multiple: true
         required: false
         hint: >-
-          One citation key per line, exactly matching a key in
-          data/books.yaml (e.g. "blake_disraeli"). Ask Evan to add a new
-          book to data/books.yaml first if it isn't in there yet.
+          Type part of an author or title to find a book. Not in the list
+          yet? Click "Add" to create it here; it is copied to the other
+          sites' bibliographies automatically.
 
       - label: Body
         name: body
         widget: markdown
         editor_components: [hl]
         modes: [rich_text, raw]
+
+  - name: books
+    label: Bibliography
+    label_singular: Book
+    folder: data/books
+    extension: yaml
+    format: yaml
+    create: true
+    delete: false
+    identifier_field: title
+    slug: '{{author}}-{{title}}'
+    summary: '{{author}} — {{title}}'
+    sortable_fields: [author, title, year]
+    fields:
+      - label: Author
+        name: author
+        widget: string
+        hint: 'Last name first, e.g. "Wilson, August" or "Nadel, Alan, ed."'
+
+      - { label: Title, name: title, widget: string }
+
+      - { label: Year, name: year, widget: number, value_type: int, required: false }
+
+      - label: Citation
+        name: citation
+        widget: string
+        required: false
+        hint: >-
+          The entry exactly as it should appear on the page. Put *asterisks*
+          around the title for italics, e.g.
+          Wilson, August. *Fences.* New York: Plume, 1986.
+
+      - label: City
+        name: city
+        widget: string
+        required: false
+        hint: Only used when Citation is blank.
+
+      - label: Publisher
+        name: publisher
+        widget: string
+        required: false
+        hint: Only used when Citation is blank.
+
+      - label: Edition
+        name: edition
+        widget: string
+        required: false
+        hint: Only used when Citation is blank.
