@@ -1,15 +1,19 @@
 [build]
-  command = "hugo --gc --minify"
+  command = "node scripts/fetch-top-posts.mjs && hugo --gc --minify"
   publish = "public"
 
 [build.environment]
   HUGO_VERSION = "0.161.1"
   HUGO_EXTENDED = "true"
+  # PLAUSIBLE_SITE_ID (the public domain) and PLAUSIBLE_EXCLUDE_CITY (a city name) are not secrets,
+  # but their values appear in site files. Without this, Netlify secrets scanning fails the build.
+  # PLAUSIBLE_API_KEY is deliberately NOT listed, so it stays scanned.
+  SECRETS_SCAN_OMIT_KEYS = "PLAUSIBLE_SITE_ID,PLAUSIBLE_EXCLUDE_CITY"
 
 # Production (stagesscreens.com): only posts with draft: false and a
 # date on or before today. This is the public build.
 [context.production]
-  command = "hugo --gc --minify"
+  command = "node scripts/fetch-top-posts.mjs && hugo --gc --minify"
 
 # Any branch other than the production branch gets its own live URL
 # (https://<branch>--<sitename>.netlify.app) and includes drafts and
@@ -18,9 +22,9 @@
 # site settings (Site configuration -> Build & deploy -> Branches and
 # deploy contexts) -- off by default.
 [context.branch-deploy]
-  command = "hugo --gc --minify --buildDrafts --buildFuture -b $DEPLOY_PRIME_URL"
+  command = "node scripts/fetch-top-posts.mjs && hugo --gc --minify --buildDrafts --buildFuture -b $DEPLOY_PRIME_URL"
 
 # Pull requests against the production branch get the same treatment,
 # on their own deploy-preview URL.
 [context.deploy-preview]
-  command = "hugo --gc --minify --buildDrafts --buildFuture -b $DEPLOY_PRIME_URL"
+  command = "node scripts/fetch-top-posts.mjs && hugo --gc --minify --buildDrafts --buildFuture -b $DEPLOY_PRIME_URL"

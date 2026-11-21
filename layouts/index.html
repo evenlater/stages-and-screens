@@ -15,6 +15,20 @@
   {{ if $featured }}{{ $gridPosts = after 1 $posts }}{{ end }}
   {{ $paginator := .Paginate $gridPosts 6 }}
 
+  {{/* Look up the Plausible-ranked paths among the non-featured essays. */}}
+  {{ $byPath := dict }}
+  {{ range $gridPosts }}
+    {{ $byPath = merge $byPath (dict .RelPermalink .) }}
+  {{ end }}
+  {{ $mostRead := slice }}
+  {{ with hugo.Data.topposts }}
+    {{ range .posts }}
+      {{ if lt (len $mostRead) 3 }}
+        {{ with index $byPath .path }}{{ $mostRead = $mostRead | append . }}{{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
   {{/* ── FEATURED / LATEST ESSAY ── page 1 only. Pagination doesn't
        split the whole template -- everything outside the paginated
        loop still renders on every /page/N/ sub-page, so without this
@@ -39,6 +53,30 @@
     </div>
   </article>
   {{ end }}
+  {{ end }}
+
+  {{/* ── MOST READ LATELY ──
+       data/topposts.json is written at build time by scripts/fetch-top-posts.mjs
+       (Plausible, last 90 days, ranked by visitors). Only paths that match a real
+       essay survive, and the featured post is left out since it is already the
+       hero. Page 1 only, and hidden if fewer than two essays qualify. */}}
+  {{ if and (eq $paginator.PageNumber 1) (ge (len $mostRead) 2) }}
+  <section class="most-read" aria-labelledby="most-read-h">
+    <div class="posts-header"><h3 id="most-read-h">Most Read Lately</h3></div>
+    <ol class="mr-list">
+      {{ range $i, $p := $mostRead }}
+      <li class="mr-item">
+        <a href="{{ $p.Permalink }}" class="mr-link">
+          <span class="mr-rank" aria-hidden="true">{{ add $i 1 }}</span>
+          <span class="mr-text">
+            <span class="mr-tag">{{ with $p.Params.tags }}{{ index . 0 }} · {{ end }}{{ $p.Date.Format "January 2006" }}</span>
+            <span class="mr-title">{{ $p.Title | markdownify }}</span>
+          </span>
+        </a>
+      </li>
+      {{ end }}
+    </ol>
+  </section>
   {{ end }}
 
   {{/* ── ESSAY GRID, REAL PAGINATION ──
